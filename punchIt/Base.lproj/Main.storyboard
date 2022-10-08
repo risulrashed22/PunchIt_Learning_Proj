@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="punchIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLL-52-aws">
+                                <rect key="frame" x="83" y="517" width="155" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="U85-8Q-xGT"/>
+                                    <constraint firstAttribute="width" constant="155" id="ybl-La-ApC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="camera.on.rectangle" catalog="system"/>
+                                <connections>
+                                    <action selector="picButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cVX-VX-l6O"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pumpkin" translatesAutoresizingMaskIntoConstraints="NO" id="YDb-Rw-jhG">
+                                <rect key="frame" x="0.0" y="10" width="320" height="497"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UBJ-yP-5iA" appends="YES" id="9L3-LO-r4c"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BLL-52-aws" secondAttribute="bottom" constant="20" id="1iB-gW-oew"/>
+                            <constraint firstItem="BLL-52-aws" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="43R-nU-tO5"/>
+                            <constraint firstItem="BLL-52-aws" firstAttribute="top" secondItem="YDb-Rw-jhG" secondAttribute="bottom" constant="10" id="MBI-0a-o67"/>
+                            <constraint firstItem="YDb-Rw-jhG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="QVe-cg-Xe4"/>
+                            <constraint firstItem="YDb-Rw-jhG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ee4-gS-3yx"/>
+                            <constraint firstItem="YDb-Rw-jhG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hTe-4N-nPF"/>
+                            <constraint firstItem="YDb-Rw-jhG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="syq-eM-vS9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageSHow" destination="YDb-Rw-jhG" id="9ho-os-fWJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UBJ-yP-5iA">
+                    <connections>
+                        <action selector="justTapped:" destination="BYZ-38-t0r" id="e2H-DO-Hiy"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="17.39130434782609" y="68.303571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.on.rectangle" catalog="system" width="128" height="96"/>
+        <image name="pumpkin" width="1000" height="1250"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
