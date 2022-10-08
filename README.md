@@ -6,5 +6,5 @@ This app was created in UIKit to learning about image import from library and ca
 <img width="200" alt="Screen Shot 2022-10-08 at 10 17 11 AM" src="https://user-images.githubusercontent.com/108306204/194723675-0369ac80-10de-4528-8507-e4bbdb3055fe.png">
 <img width="200" alt="Screen Shot 2022-10-08 at 10 17 11 AM" src="https://user-images.githubusercontent.com/108306204/194723676-24ed5094-0602-4076-81d8-3545181b3a46.png">
 
-This project was created by Risul Rashed
-It follows learning path of Professor John Gallaugher
+This project was created by Risul Rashed.
+It follows learning path of Professor John Gallaugher.
